@@ -1,0 +1,11 @@
+Bag of words Model with scikit Naive Bayes  , Score - 0.78057
+=> TweetTokenizer
+=> SnowballStemming
+=> CountVectorizer
+=> scikit Naive Bayes
+
+NLTK Naive Bayes , Score - 0.78547
+=> Tweet Tokenizer
+=> Spacy Lemmatization
+=> Feature generation
+=> Naive Bayes

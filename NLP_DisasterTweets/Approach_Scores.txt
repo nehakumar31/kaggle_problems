@@ -9,3 +9,9 @@ NLTK Naive Bayes , Score - 0.78547
 => Spacy Lemmatization
 => Feature generation
 => Naive Bayes
+
+LSTM, Score - 0.79865
+=> Tweet Tokenizer
+=> Spacy lemmatization
+=> pre-trained glove embeddings
+=> LSTM

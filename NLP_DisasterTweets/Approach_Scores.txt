@@ -15,3 +15,8 @@ LSTM, Score - 0.79865
 => Spacy lemmatization
 => pre-trained glove embeddings
 => LSTM
+
+BERTTransformer - 0.81949
+=> Regular expression clean up
+=> Lemmatization
+=> Bert Transformer

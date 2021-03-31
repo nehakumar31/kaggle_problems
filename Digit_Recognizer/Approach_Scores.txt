@@ -1,4 +1,7 @@
-Approach 1(Score: ) =>
-- 
+Approach 1(Score: 0.99064) =>
+- Image normalization
+- CNN with Conv2D and Dense layers
 
-Approach 2(Score:) =>
+Approach 2(Score: 0.99117) =>
+- ImageDataAugmentor for feature-wise centering and standardization 
+- CNN with Conv2D and Dense layers

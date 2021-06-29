@@ -1,0 +1,15 @@
+This python notebook is a solution to wallmart competeition on kaggle: https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting/overview
+Feature generation involved:
+  => New features: 'IsSuperbowl', 'IsThanksgiving', 'IsChristmasMonth' indicating holiday weekends
+  => 'IsHighSaleWeekend' - As sales are high on first weekend of every month except for scenarios when first weekend falls on 1st or 2nd of the month. 
+  => Data has seasonality so 'Weekly_Sales_past1yr' is used as a feature to indicate the sales of last year corresponding to a Store, Dept, Year, WeekNumber
+Modelling: 3 models were considered
+  => Linear Regression => on submission gave Public Score: Private Score: 
+  => FBprophet Time series model => Prediction couldn't be done for a couple of Store and Dept combinations as number of training samples available weren't enough to forecast out of sample data
+  => ARIMA with seasonal differencing => Prediction couldn't be done for a couple of Store and Dept combinations as number of training samples available weren't enough for model to converge
+Model Stacking:
+  => Linear Regression and FBPropet average sales => on submission gave Public Score: 2769.68 Private Score: 2849.77
+  => Linear Regression and ARIMA average sales => on submission gave Public Score: 2933.14 Private Score: 3016.12
+  => Linear Regression, FBProphet, ARIMA average sales => on submission gave Public Score: 2749.14   Private Score: 2828.23
+  
+  The best score on kaggle platform so far is 2301.48
